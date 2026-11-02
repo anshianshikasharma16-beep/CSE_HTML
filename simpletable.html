@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- Basic table tags -->
+    <table>
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Spanning rows and columns -->
+     <!-- colspan -->
+      <h2>Cell that spans two columns</h2>
+      <p>To make a cell span more than one columnn, use the colspan attribute</p>
+     <table style="width:50%">
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>57</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <!-- Rowspan -->
+      <h2>Cell that spans two rows</h2>
+      <p>To make a cell span more than one row, use the rowspan attribute</p>
+      <table style ="width:100%">
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+            <tr>
+                <td>555-5678</td>
+            </tr>
+            </table>
+
+            <!-- Table Attributes -->
+             <h1>This is Border Attribute</h1>
+             <h2>HTML table border Attribute</h2>
+             <table align="center" border="1" cellpadding="20" cellspacing="10">
+                 <caption>Author Details</caption>
+                 <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Branch</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td>Shalini</td>
+                        <td>22</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>Rohit</td>
+                        <td>23</td>
+                        <td>ECE</td>
+                    </tr>
+                 </tbody>
+                </table>
+    
+</body>
+</html>
